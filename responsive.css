@@ -1,0 +1,20 @@
+@media screen and (max-width: 900px) {
+    .container{
+        flex-wrap: wrap;
+    
+    }
+    .competences ul li{
+
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    .container{
+        justify-content: left;
+    }
+    .profil .competences ul li{
+    
+        font-size: 16px;
+    }
+}
