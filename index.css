@@ -45,7 +45,8 @@ ul {
     padding-bottom: 35px;
     max-width: 500px;
 }
-.profil h1{
+
+.profil h1 {
 
     text-align: center;
 }
@@ -114,34 +115,100 @@ ul {
 
     margin-bottom: 20px;
 }
-.profil-pro p{
+
+.profil-pro p {
 
     font-size: 18px;
 }
 
-.donnees h2{
+.donnees h2 {
     max-width: max-content;
     border-bottom: 1px dashed green;
 }
+
 /****** PARCOURS PROFESSIONNEL *******/
 
-.parcours h3{
+.parcours h3 {
 
     font-size: 20px;
     margin: 20px 0;
 }
+
 .parcours p {
     font-size: 17px;
 }
-.parcours p:nth-child(6){
+
+.parcours p:nth-child(6) {
 
     margin-bottom: 20px;
 }
+
 .parcours img {
     cursor: pointer;
 }
+
 .div-attestation,
-.div-attestation p{
+.div-attestation p {
     display: flex;
     align-items: center;
+}
+
+.sliderr {
+
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 750px;
+    width: 750px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.slider .slides {
+
+    width: inherit;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+.slides.active {
+
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+
+
+    background-color: white;
+    border-radius: 50%;
+    z-index: 10;
+    height: 25px;
+    width: 25px;
+    padding: 2px;
+    top: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.arrow-right{
+
+    position: absolute;
+    right: 15px;
+    transform: translateY(-50%);
+}
+.arrow-left{
+
+    position: absolute;
+    left: 15px;
+    transform: translateY(-50%);
 }
