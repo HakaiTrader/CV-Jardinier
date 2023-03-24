@@ -18,3 +18,11 @@
         font-size: 16px;
     }
 }
+@media screen and (max-width: 570px) {
+    
+    .slider{
+
+        width: 320px;
+        height: 320px;
+    }
+}
