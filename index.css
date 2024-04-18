@@ -146,6 +146,10 @@ ul {
 .parcours img {
     cursor: pointer;
 }
+.attestation{
+
+    z-index: 10000;
+}
 
 .div-attestation,
 .div-attestation p {
